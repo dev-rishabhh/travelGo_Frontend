@@ -1,1 +1,1 @@
-export const BASE_URL="https://travel-go-backend.vercel.app/";
+export const BASE_URL="https://travel-go-backend.vercel.app";
