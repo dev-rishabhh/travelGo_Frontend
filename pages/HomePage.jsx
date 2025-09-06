@@ -3,7 +3,7 @@ import './HomePage.css'
 import AboutUs from '@/components/AboutUs';
 import Testimonials from '@/components/Testimonials';
 import FeaturedTours from '@/components/FeaturedTours';
-import Stay from '@/components/stay';
+import Stay from '@/components/Stay';
 import Gallery from '@/components/Carousel';
 import WhyChooseUs from '@/components/WhyChooseUs';
 import FloatingButton from '@/components/FloatingButton';
