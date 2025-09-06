@@ -1,0 +1,221 @@
+/* Apartments.css */
+
+/* Page layout */
+/* .page-wrapper {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-block: 32px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+} */
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.pt-20 {
+  padding-top: 5rem;
+  /* 80px */
+}
+
+/* Container for consistent width & padding */
+/* .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+} */
+
+/* Header section styles */
+.header-section {
+  position: relative;
+  padding: 5rem 0;
+  background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+  /* light sea gradient */
+  overflow: hidden;
+}
+
+.header-section.dark {
+  background: linear-gradient(to right, #063970, #1c1f2a);
+  /* dark mode example */
+  color: #f0f0f0;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .title {
+    font-size: 3rem;
+  }
+}
+
+.subtitle {
+  color: #6b7280;
+  /* muted-foreground */
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Decorative circles */
+.decorative-elements {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.circle-primary {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 16rem;
+  height: 16rem;
+  border-radius: 50%;
+  background-color: rgba(59, 130, 246, 0.5);
+  /* blue-500 / 50% */
+  filter: blur(48px);
+}
+
+.circle-sea {
+  position: absolute;
+  top: 2.5rem;
+  right: 10rem;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  background-color: #93c5fd;
+  /* blue-300 */
+  filter: blur(48px);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease forwards;
+  opacity: 0;
+}
+
+.fade-in.delay-200 {
+  animation-delay: 0.2s;
+}
+
+/* Grid layouts */
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.grid-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .md-grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg-grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Filter section */
+.filter-section {
+  padding: 2rem;
+  border-bottom: 1px solid #e5e7eb;
+  /* gray-200 */
+}
+
+.label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+/* Select trigger width */
+.select-trigger {
+  width: 100%;
+}
+
+/* Slider margin */
+.slider {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Filter footer (bottom of filters) */
+.filter-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.text-muted {
+  color: #6b7280;
+  /* gray-500 */
+}
+
+/* Apartments grid */
+.section {
+  padding: 12px;
+}
+
+.no-results {
+  padding: 3rem 1rem;
+}
+
+.no-results-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}

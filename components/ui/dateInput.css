@@ -1,0 +1,65 @@
+.date-input {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.date-input__label {
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+}
+
+
+.date-input__wrapper {
+    position: relative;
+     border: 1px solid rgba(63, 62, 62, 0.2);
+     border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.date-input__icon {
+    position: absolute;
+    left: 12px;
+    /* color: #4facfe; */
+    z-index: 1;
+    pointer-events: none;
+}
+
+.date-input__field {
+    width: 100%;
+     padding-inline:24px;
+    padding-block: 12px;
+    /* background: rgba(255, 255, 255, 0.1); */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    /* color: white; */
+    font-weight: 500;
+    padding-left: 40px;
+    /* transition: all 0.3s ease; */
+    backdrop-filter: blur(10px);
+}
+
+.date-input__field:focus {
+    outline: none;
+    /* border-color: #4facfe;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 0 3px rgba(79, 172, 254, 0.3); */
+}
+
+.date-input__field::placeholder {
+      color: #9ca3af;
+}
+
+.date-input__field::-webkit-calendar-picker-indicator {
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+}

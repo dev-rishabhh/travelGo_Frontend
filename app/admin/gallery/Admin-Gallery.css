@@ -1,0 +1,46 @@
+.gallery-container{
+  padding: 12px 20px;
+}
+.gallery-container h2{
+  text-align: center;
+}
+.upload-btn-cont{
+  display: flex;
+  justify-content: flex-end;
+}
+.upload-btn-cont button{
+  padding: 12px 16px;
+ width: 80px;
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px;
+}
+
+.image-card {
+  width: 250px;
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  position: relative;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  padding: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out;
+}
+
+.image-card:hover {
+  transform: scale(1.03);
+}
+
+.image-name {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 6px 10px;
+  border-radius: 4px;
+}
