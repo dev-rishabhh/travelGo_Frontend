@@ -172,13 +172,13 @@ const About = () => {
               <div
                 className="grid  grid-cols-1 md:grid-cols-2  bg-gray-50 p-4 rounded-lg group animate-fade-in hover-scale"
               >
-                <div className="relative flex-shrink-0">
+                <div className="">
                   <img
-                    src={"./Harshit.jpg"}
+                    src={"./harshit.jpg"}
                     alt="Harshit Tiwari"
                     className=" rounded-sm object-cover shadow-lg  duration-300"
                   />
-                  <div className="absolute inset-0 rounded-full  transition-all duration-300"></div>
+                  <div className="inset-0 rounded-full  transition-all duration-300"></div>
                 </div>
                 <div className="flex-1 px-3 my-2 md:my-0">
                   <h3 className="text-2xl font-bold text-gray-900 text-center">Mohit Tiwari</h3>
