@@ -616,7 +616,7 @@ export default function BookingPage() {
                       className="btn-primary"
                       onClick={() => {
                         () => setCurrentStep(4),
-                        handleConfirmation()
+                          handleConfirmation()
                       }}
                     >
                       Confirm <ChevronRight className="ml-2 h-4 w-4" />
@@ -630,7 +630,25 @@ export default function BookingPage() {
 
           {/* Step 4: Confirmation  */}
           {
-            currentStep === 4 ? location.replace("/success"): ""
+            currentStep === 4 && (
+              <div className="p-14">
+                <div className="glass-card p-8 text-center animate-fade-in">
+                  <div className="w-16 h-16 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <Check className="h-8 w-8 text-green-600 dark:text-green-400" />
+                  </div>
+                  <h2 className="text-2xl font-bold mb-2">Booking Request Confirmed!</h2>
+                  <p className="text-muted-foreground mb-6">
+                    Your reservation has been successfully confirmed.
+                  </p>
+                  <p className="font-medium mb-8">
+                    Booking Reference: <span className="text-primary">MRS-{Math.floor(Math.random() * 10000).toString().padStart(4, '0')}</span>
+                  </p>
+                  <Button varient="primary">
+                    <Link href="/">Return to Homepage</Link>
+                  </Button>
+                </div>
+              </div>
+            )
           }
 
         </section>

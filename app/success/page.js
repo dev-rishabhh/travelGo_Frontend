@@ -10,8 +10,9 @@ function page() {
   const router = useRouter()
 
   setTimeout(() => {
+
     router.push("/")
-  }, 3000);
+  }, 10000);
 
   return (
     <div className="p-14">
