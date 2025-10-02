@@ -6,10 +6,10 @@ import Link from "next/link";
 
 const About = () => {
   const stats = [
-    { icon: Users, number: "50,000+", label: "Happy Travelers" },
-    { icon: Globe, number: "150+", label: "Destinations" },
-    { icon: Award, number: "25+", label: "Years Experience" },
-    { icon: TrendingUp, number: "98%", label: "Satisfaction Rate" }
+    { icon: Users, number: "2,000+", label: "Happy Travelers" },
+    { icon: Globe, number: "15+", label: "Destinations" },
+    { icon: Award, number: "4+", label: "Years Experience" },
+    { icon: TrendingUp, number: "99%", label: "Satisfaction Rate" }
   ];
 
   const values = [
@@ -48,7 +48,7 @@ const About = () => {
             {/* <span className="block text-blue-200">Wanderlust & Wonder</span> */}
           </h1>
           <p className="text-xl text-red-50 max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            For over two decades, we've been crafting extraordinary journeys that inspire,
+            For over 4 years, we've been crafting extraordinary journeys that inspire,
             educate, and create lasting memories for travelers from around the globe.
           </p>
         </div>
@@ -60,9 +60,9 @@ const About = () => {
           <div className="max-w-4xl mx-auto animate-fade-in">
             <h2 className="text-4xl font-bold text-gray-900 mb-8">Our Mission</h2>
             <p className="text-2xl text-gray-700 leading-relaxed mb-8">
-              "To bridge cultures, create meaningful connections, and inspire a deeper understanding
-              of our world through transformative travel experiences that respect local communities
-              and preserve the beauty of our planet for future generations."
+              "Our mission is to showcase the spiritual eesence of Ayodhya, Varanasi and other places by offering authentic, well-planned toursthat connect travelers with
+              rich culture, heritage, and traditions of these sacred cities.We aim to provide seamless travle experience with personalized packages, trusted local giudes,and 24/7 Support
+              ensuring every journey comfertable and unforgettable."
             </p>
             <div className="flex justify-center items-center gap-4">
               <div className="w-12 h-0.5 bg-blue-600"></div>
@@ -103,18 +103,18 @@ const About = () => {
                 A Journey That Started With a Dream
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                Founded in 1999 by Sarah Chen, TourEscape began as a small travel consultancy
-                with a simple mission: to make the world more accessible through thoughtfully
+                Founded in 2021 by Hrshit Tiwari, Holiday Vibes began as a small travel consultancy
+                with a simple mission: to make Ayodhya more accessible through thoughtfully
                 designed travel experiences.
               </p>
               <p className="text-lg text-gray-600 mb-6">
-                What started as weekend trips for friends and family has grown into a globally
+                What started as weekend trips for friends and family has grown into a 
                 recognized travel company, but our core values remain unchanged - authentic
                 experiences, personal connections, and sustainable travel practices.
               </p>
               <p className="text-lg text-gray-600 mb-6">
-                Today, we're proud to have facilitated over 50,000 journeys, created partnerships
-                with local communities worldwide, and maintained our 98% customer satisfaction rate.
+                Today, we're proud to have facilitated over 2,000 journeys, created partnerships
+                with local communities, and maintained our 99% customer satisfaction rate.
               </p>
               <p className="text-lg text-gray-600 mb-8">
                 Our commitment to responsible tourism has earned us recognition as industry leaders
@@ -174,8 +174,8 @@ const About = () => {
               >
                 <div className="relative flex-shrink-0">
                   <img
-                    src={"https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face"}
-                    alt="Mohit Tiwari"
+                    src={"./Harshit.jpg"}
+                    alt="Harshit Tiwari"
                     className=" rounded-sm object-cover shadow-lg  duration-300"
                   />
                   <div className="absolute inset-0 rounded-full  transition-all duration-300"></div>
@@ -183,18 +183,14 @@ const About = () => {
                 <div className="flex-1 px-3 my-2 md:my-0">
                   <h3 className="text-2xl font-bold text-gray-900 text-center">Mohit Tiwari</h3>
                   <p className="text-blue-600 font-medium mb-3 text-center">Founder & CEO</p>
-                  <p className="text-gray-600 mb-3"> " lorem ipsum de ivor lorem ipsum
-                    lorem ipsum de ivor lorem ipsum  lorem ipsum de ivor lorem ipsum  lorem ipsum de ivor lorem ipsum  lorem ipsum de ivor lorem ipsum
-                    lorem ipsum de ivor lorem ipsum  lorem ipsum de ivor lorem ipsum  lorem ipsum de ivor lorem ipsum  lorem ipsum de ivor lorem ipsum
-                    lorem ipsum de ivor lorem ipsum  lorem ipsum de ivor lorem ipsum  lorem ipsum de ivor lorem ipsum  lorem ipsum de ivor lorem ipsum
-                    lorem ipsum de ivor lorem ipsum  lorem ipsum de ivor lorem ipsum  lorem ipsum de ivor lorem ipsum  lorem ipsum de ivor lorem ipsum
-                    lorem ipsum de ivor lorem ipsum  lorem ipsum de ivor lorem ipsum  lorem ipsum de ivor lorem ipsum
-                    lorem ipsum de ivor lorem ipsum  lorem ipsum de ivor lorem ipsum  lorem ipsum de ivor lorem ipsum  lorem ipsum de ivor lorem ipsum
-                    lorem ipsum de ivor lorem ipsum  lorem ipsum de ivor lorem ipsum "
+                  <p className="text-gray-600 mb-3"> "Harshit Tiwari , is an MBA in Hospitality and Tourism with over 10 years of experience
+                    of hands-on-experience in Ayodhya tourism. With a deep passion for showcasing India's culture and spiritual heritage,especially Ayodhya and Varanasi, he has 
+                    dedicated his carrer to creating authentic,memorable and travel-friendly experiences. His vision is to blend professional expertise with personal care, ensuring every 
+                    journey reflects the spirit of India"
                   </p>
                     <p className="text-sm text-gray-500 flex gap-1 items-center">
                       <Mail color="blue" size={"16px"}/>
-                       Email:  test@gmail.com
+                       Email:  holidayvibes1101@gmail.com
                       </p>
                 </div>
               </div>

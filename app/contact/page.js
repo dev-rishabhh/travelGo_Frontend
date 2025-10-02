@@ -241,7 +241,7 @@ export default function Contact() {
         <section className="faq-section">
           <div className="faq-header">
             <h2>FAQs</h2>
-            <p>Faq subtitle</p>
+            <p>Quick answers to help you plann your perfect tour with ease</p>
           </div>
 
           <div className="faq-grid">
