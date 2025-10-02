@@ -616,8 +616,8 @@ export default function BookingPage() {
                     <Button
                       className="btn-primary"
                       onClick={() => {
-                        handleConfirmation(),
-                        () => setCurrentStep(4)
+                        () => setCurrentStep(4),
+                        handleConfirmation()
                       }}
                     >
                       Confirm <ChevronRight className="ml-2 h-4 w-4" />
