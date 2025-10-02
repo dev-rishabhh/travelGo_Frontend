@@ -174,7 +174,7 @@ const About = () => {
               >
                 <div className="">
                   <img
-                    src={"./harshit.jpg"}
+                    src={"./Harshit.jpg"}
                     alt="Harshit Tiwari"
                     className=" rounded-sm object-cover shadow-lg  duration-300"
                   />
