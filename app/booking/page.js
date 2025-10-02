@@ -6,7 +6,7 @@ import AvailabilityForm from "@/components/AvailibilityForm";
 import ProgressBar from "@/components/ProgressBar";
 import { BASE_URL } from "@/apis/api";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { Button } from '@/components/ui/button'
 
 // import { loadStripe } from '@stripe/stripe-js';
 
@@ -63,7 +63,7 @@ export default function BookingPage() {
 
   // handle payment
   async function handleConfirmation() {
-  const router = useRouter()
+
     // Payment gateway Integration
     // console.log("Payment sucessful");
     // const stripe = await loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLIC_KEY);
@@ -96,7 +96,6 @@ export default function BookingPage() {
       });
 
       const data = await response.json();
-
 
       if (data.error) {
         console.log(data.error);
@@ -141,17 +140,15 @@ export default function BookingPage() {
       console.error("Error:", error);
       // setServerError("Something went wrong. Please try again.");
     }
-
     // const result = stripe.redirectToCheckout({
     //   sessionId: session.id
     // });
     // if (result.error) {
     //   console.log(result.error);
     // }
-    setCurrentStep(4)
-   setTimeout(() => {
-    router.push("/")
-  }, 2000);
+    //  setTimeout(() => {
+    //   router.push("/")
+    // }, 2000);
   }
 
   return (
@@ -273,7 +270,6 @@ export default function BookingPage() {
               </div>
             </div>
           )}
-
 
           {/* Step 2: Guest Details */}
           {currentStep === 2 && (
@@ -464,7 +460,7 @@ export default function BookingPage() {
             </div>
           )}
 
-          {/* Step 3: Confirmation */}
+          {/* Step 3: Review */}
           {currentStep === 3 && (
             <div className="animate-fade-in [animation-delay:300ms]">
               <div className="max-w-4xl mx-auto">
@@ -619,7 +615,10 @@ export default function BookingPage() {
                     </Button>
                     <Button
                       className="btn-primary"
-                      onClick={handleConfirmation()}
+                      onClick={() => {
+                        handleConfirmation(),
+                        () => setCurrentStep(4)
+                      }}
                     >
                       Confirm <ChevronRight className="ml-2 h-4 w-4" />
                     </Button>
@@ -629,6 +628,30 @@ export default function BookingPage() {
               </div>
             </div>
           )}
+
+          {/* Step 4: Confirmation  */}
+          {
+            currentStep === 4 && (
+              <div className="p-14">
+                <div className="glass-card p-8 text-center animate-fade-in">
+                  <div className="w-16 h-16 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <Check className="h-8 w-8 text-green-600 dark:text-green-400" />
+                  </div>
+                  <h2 className="text-2xl font-bold mb-2">Booking Request Confirmed!</h2>
+                  <p className="text-muted-foreground mb-6">
+                    Your reservation has been successfully confirmed.
+                  </p>
+                  <p className="font-medium mb-8">
+                    Booking Reference: <span className="text-primary">MRS-{Math.floor(Math.random() * 10000).toString().padStart(4, '0')}</span>
+                  </p>
+                  <Button varient="primary">
+                    <Link href="/">Return to Homepage</Link>
+                  </Button>
+                </div>
+              </div>
+            )
+          }
+
         </section>
       </main>
     </div>
