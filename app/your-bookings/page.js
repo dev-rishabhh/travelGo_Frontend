@@ -84,10 +84,10 @@ const BookingsList = () => {
                        Confirmed
                       </span>
                     </div>
-                    <div className="text-right">
+                    {/* <div className="text-right">
                       <div className="text-2xl font-bold flex gap-1 items-center"><IndianRupee/> {booking.amount}</div>
                       <div className="text-blue-400 text-sm">Total Amount</div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
 

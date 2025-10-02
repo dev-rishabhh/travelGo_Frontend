@@ -19,7 +19,7 @@ function page() {
         <div className="w-16 h-16 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center mx-auto mb-6">
           <Check className="h-8 w-8 text-green-600 dark:text-green-400" />
         </div>
-        <h2 className="text-2xl font-bold mb-2">Booking Confirmed!</h2>
+        <h2 className="text-2xl font-bold mb-2">Booking Request Confirmed!</h2>
         <p className="text-muted-foreground mb-6">
           Your reservation has been successfully confirmed.
         </p>

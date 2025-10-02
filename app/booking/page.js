@@ -6,8 +6,9 @@ import AvailabilityForm from "@/components/AvailibilityForm";
 import ProgressBar from "@/components/ProgressBar";
 import { BASE_URL } from "@/apis/api";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
-import { loadStripe } from '@stripe/stripe-js';
+// import { loadStripe } from '@stripe/stripe-js';
 
 
 export default function BookingPage() {
@@ -27,13 +28,13 @@ export default function BookingPage() {
     city: "",
     zipCode: "",
     country: "",
-    amount: '',
+    specialRequests: "",
+    // amount: "",
     // paymentMethod: "credit-card",
     // cardName: "",
     // cardNumber: "",
     // cardExpiry: "",
     // cardCvc: "",
-    specialRequests: ""
   });
 
   // Scroll to top when component mounts
@@ -61,26 +62,24 @@ export default function BookingPage() {
   };
 
   // handle payment
-  async function handlePayment() {
-
-    console.log("Payment sucessful");
-
-    const stripe = await loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLIC_KEY);
-
-    const response = await fetch(`${BASE_URL}/bookings/create-checkout-session`, {
-      method: "POST",
-      body: JSON.stringify({ selectedApartment }),
-      headers: {
-        "Content-Type": "application/json",
-      },
-      credentials: "include"
-    });
-
-    const session = await response.json();
+  async function handleConfirmation() {
+ const router = useRouter()
+    // Payment gateway Integration
+    // console.log("Payment sucessful");
+    // const stripe = await loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLIC_KEY);
+    // const response = await fetch(`${BASE_URL}/bookings/create-checkout-session`, {
+    //   method: "POST",
+    //   body: JSON.stringify({ selectedApartment }),
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    //   credentials: "include"
+    // });
+    // const session = await response.json();
 
     // save to database
     const allformData = new FormData();
-    formData.amount=selectedApartment.price
+    // formData.amount=selectedApartment.price
     allformData.append('formData', formData);
     const slectedApartmentId = selectedApartment._id
 
@@ -128,13 +127,13 @@ export default function BookingPage() {
             city: "",
             zipCode: "",
             country: "",
-            amount: "",
+            specialRequests: "",
+            // amount: "",
             // paymentMethod: "credit-card",
             // cardName: "",
             // cardNumber: "",
             // cardExpiry: "",
             // cardCvc: "",
-            specialRequests: ""
           });
         }, 5000);
       }
@@ -143,15 +142,16 @@ export default function BookingPage() {
       // setServerError("Something went wrong. Please try again.");
     }
 
-    const result = stripe.redirectToCheckout({
-      sessionId: session.id
-    });
-
-    if (result.error) {
-      console.log(result.error);
-    }
+    // const result = stripe.redirectToCheckout({
+    //   sessionId: session.id
+    // });
+    // if (result.error) {
+    //   console.log(result.error);
+    // }
     setCurrentStep(4)
-
+   setTimeout(() => {
+    router.push("/")
+  }, 2000);
   }
 
   return (
@@ -619,9 +619,9 @@ export default function BookingPage() {
                     </Button>
                     <Button
                       className="btn-primary"
-                      onClick={handlePayment}
+                      onClick={handleConfirmation}
                     >
-                      Payment <ChevronRight className="ml-2 h-4 w-4" />
+                      Confirm <ChevronRight className="ml-2 h-4 w-4" />
                     </Button>
 
                   </div>

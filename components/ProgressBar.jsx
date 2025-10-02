@@ -29,7 +29,7 @@ function ProgressBar({currentStep}) {
                         : "text-muted-foreground"
                     )}
                   >
-                    {step === 1 ? "Choose Room" : step === 2 ? "Guest Details": step === 3 ? "Confirmation" : "Payment"}
+                    {step === 1 ? "Choose Package" : step === 2 ? "Guest Details": step === 3 ? "Review": "Confirm" }
                   </span>
                 </div>
               ))}
