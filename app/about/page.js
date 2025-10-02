@@ -170,7 +170,7 @@ const About = () => {
           </div>
           <div className="">
               <div
-                className="grid  grid-cols-1 md:grid-cols-2  bg-gray-50 p-4 rounded-lg group animate-fade-in hover-scale"
+                className="grid  grid-cols-1  bg-gray-50 p-4 rounded-lg group animate-fade-in hover-scale"
               >
                 <div className="">
                   <img
