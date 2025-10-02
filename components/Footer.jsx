@@ -33,11 +33,11 @@ const Footer = () => {
           <div className="footer-section">
             <h4 className="footer-section-title">Popular Tours</h4>
             <ul className="footer-links">
-              <li><a href="#">Everest Base Camp</a></li>
-              <li><a href="#">Annapurna Circuit</a></li>
-              <li><a href="#">Langtang Valley</a></li>
-              <li><a href="#">Chitwan Safari</a></li>
-              <li><a href="#">Cultural Heritage</a></li>
+              <li><a href="#">Ayodhya Tours</a></li>
+              <li><a href="#">Varanasi Tours</a></li>
+              <li><a href="#">Rajsthan Tours</a></li>
+              <li><a href="#">Mathura-Vrindavan Tours</a></li>
+              <li><a href="#">Prayagraj Tours</a></li>
             </ul>
           </div>
 
@@ -46,15 +46,15 @@ const Footer = () => {
             <div className="contact-info">
               <div className="contact-item">
                 <span className="contact-icon">📍</span>
-                <span>Ayodhya, UP, India</span>
+                <span>Dadera, Bharat Kund Road, Ayodhya, 224135</span>
               </div>
               <div className="contact-item">
                 <span className="contact-icon">📞</span>
-                <span>+977-1-4444-444</span>
+                <span>+91 8948236849</span>
               </div>
               <div className="contact-item">
                 <span className="contact-icon">✉️</span>
-                <span>info@holidaytoursandtravel.com</span>
+                <span>holidayvibes1101@gmail.com</span>
               </div>
               <div className="contact-item">
                 <span className="contact-icon">🕐</span>

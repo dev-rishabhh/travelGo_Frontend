@@ -66,11 +66,11 @@ export default function Contact() {
 
   const faqs = [
     { key: "checkInOut", icon: <Clock />, question: "How can I book a tour with you?", answer: "You can ask for a booking directly through our website, call us or fill out the contact form.Our team will guide you through the process" },
-    { key: "parking", icon: <MapPin />, question: "Do you customise your tour packages?", answer: "Yes we offer tailor-made packages based on your preferences, budget , group-size,travel dates" },
-    { key: "pets", icon: <MapPin />, question: "What is your cancellation and refund policy?", answer: "Our cancellation and refund ploicy vary by package.Please contact us for detailed terms before booking" },
-    { key: "breakfast", icon: <MapPin />, question: "Do you provide local guide and transportation?", answer: "Yes we provide expert guides, comfertable cabs, and other services to make your travel hassel-free " },
-    { key: "transfers", icon: <MapPin />, question: "Can I get assistance for hotel bookings, and transfers?", answer: "Absolutely, we handle hotel reservations, airport transfers, and other travel needs along with your tour" },
-    { key: "amenities", icon: <MapPin />, question: "How can I reach you for urgent queries?", answer: "You can call our helpline number or WhatsApp us for instant support. Our team is available 24/7 for assistance" },
+    { key: "parking", icon: <Clock />, question: "Do you customise your tour packages?", answer: "Yes we offer tailor-made packages based on your preferences, budget , group-size,travel dates" },
+    { key: "pets", icon: <Clock />, question: "What is your cancellation and refund policy?", answer: "Our cancellation and refund ploicy vary by package.Please contact us for detailed terms before booking" },
+    { key: "breakfast", icon: <Clock />, question: "Do you provide local guide and transportation?", answer: "Yes we provide expert guides, comfertable cabs, and other services to make your travel hassel-free " },
+    { key: "transfers", icon: <Clock />, question: "Can I get assistance for hotel bookings, and transfers?", answer: "Absolutely, we handle hotel reservations, airport transfers, and other travel needs along with your tour" },
+    { key: "amenities", icon:<Clock />, question: "How can I reach you for urgent queries?", answer: "You can call our helpline number or WhatsApp us for instant support. Our team is available 24/7 for assistance" },
   ];
 
   return (
