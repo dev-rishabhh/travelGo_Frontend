@@ -110,6 +110,7 @@ export default function BookingPage() {
           guests: { adults, children },
           customerInfo: formData
         });
+         setCurrentStep(4);
         // Reset form after booking is confirmed
         setTimeout(() => {
           setCurrentStep(1);
@@ -145,6 +146,7 @@ export default function BookingPage() {
     // const result = stripe.redirectToCheckout({
     //   sessionId: session.id
     // });
+
     // if (result.error) {
     //   console.log(result.error);
     // }
@@ -614,10 +616,7 @@ export default function BookingPage() {
                     </Button>
                     <Button
                       className="btn-primary"
-                      onClick={() => {
-                        () => setCurrentStep(4),
-                          handleConfirmation()
-                      }}
+                      onClick={handleConfirmation()}
                     >
                       Confirm <ChevronRight className="ml-2 h-4 w-4" />
                     </Button>
