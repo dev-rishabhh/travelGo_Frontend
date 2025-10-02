@@ -6,8 +6,8 @@ import AvailabilityForm from "@/components/AvailibilityForm";
 import ProgressBar from "@/components/ProgressBar";
 import { BASE_URL } from "@/apis/api";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
- const router = useRouter()
+// import { useRouter } from "next/navigation";
+//  const router = useRouter()
 
 // import { loadStripe } from '@stripe/stripe-js';
 
@@ -630,7 +630,7 @@ export default function BookingPage() {
 
           {/* Step 4: Confirmation  */}
           {
-            currentStep === 4 ? router.push("/success"): ""
+            currentStep === 4 ? location.replace("/success"): ""
           }
 
         </section>
