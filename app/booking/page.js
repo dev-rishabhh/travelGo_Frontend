@@ -6,7 +6,6 @@ import AvailabilityForm from "@/components/AvailibilityForm";
 import ProgressBar from "@/components/ProgressBar";
 import { BASE_URL } from "@/apis/api";
 import Link from "next/link";
-import { Button } from '@/components/ui/button'
 
 // import { loadStripe } from '@stripe/stripe-js';
 
