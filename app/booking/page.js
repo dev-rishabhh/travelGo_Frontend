@@ -63,7 +63,7 @@ export default function BookingPage() {
 
   // handle payment
   async function handleConfirmation() {
- const router = useRouter()
+  const router = useRouter()
     // Payment gateway Integration
     // console.log("Payment sucessful");
     // const stripe = await loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLIC_KEY);
@@ -619,7 +619,7 @@ export default function BookingPage() {
                     </Button>
                     <Button
                       className="btn-primary"
-                      onClick={handleConfirmation}
+                      onClick={handleConfirmation()}
                     >
                       Confirm <ChevronRight className="ml-2 h-4 w-4" />
                     </Button>
