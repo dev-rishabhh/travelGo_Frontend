@@ -8,11 +8,11 @@ import { BASE_URL } from "@/apis/api";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
-    name: "abc",
-    email: "abc@gmail.com",
-    phone: "12345678",
-    subject: "testing",
-    message: "i am testing this route"
+    name: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: ""
   });
 
   const [isSubmitted, setIsSubmitted] = useState(false);

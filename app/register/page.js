@@ -8,9 +8,9 @@ import { BASE_URL } from "@/apis/api";
 const Register = () => {
 
   const [formData, setFormData] = useState({
-    name: "Rishabh Pandey",
-    email: "rp265053@gmail.com",
-    password: "abcd",
+    name: "",
+    email: "",
+    password: "",
     otp: ""
   });
   const router = useRouter()

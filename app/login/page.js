@@ -8,8 +8,8 @@ const Login = () => {
 
 
   const [formData, setFormData] = useState({
-    email: "rp265053@gmail.com",
-    password: "abcd",
+    email: "",
+    password: "",
   });
 
     // const router = useRouter()
