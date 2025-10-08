@@ -104,13 +104,14 @@ export default function BookingPage() {
         // Show error below the email field (e.g., "Email already exists")
         // setServerError(data.error);
       } else {
+        setCurrentStep(4);
         console.log("Booking submitted:", {
           apartment: selectedApartment,
           dates: { startDate, endDate },
           guests: { adults, children },
           customerInfo: formData
         });
-         setCurrentStep(4);
+        
         // Reset form after booking is confirmed
         setTimeout(() => {
           setCurrentStep(1);
@@ -616,7 +617,11 @@ export default function BookingPage() {
                     </Button>
                     <Button
                       className="btn-primary"
-                      onClick={handleConfirmation()}
+                      onClick={()=>{
+                        handleConfirmation()
+                      }
+
+                      }
                     >
                       Confirm <ChevronRight className="ml-2 h-4 w-4" />
                     </Button>
