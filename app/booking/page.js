@@ -101,7 +101,7 @@ export default function BookingPage() {
       const data = await response.json();
 
       if (data.status===401) {
-        return router.push("/")
+        return router.push("/login")
       }
       if (data.error) {
         console.log(data.error);
