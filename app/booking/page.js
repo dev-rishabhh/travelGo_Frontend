@@ -97,14 +97,14 @@ export default function BookingPage() {
         },
         credentials: "include"
       });
+      if (!response.ok) {
+        return router.push("/login")
+      }
 
       const data = await response.json();
-
-      // if (data.status===401) {
-      // }
+      
       if (data.error) {
-        console.log(data);
-         return router.push("/login")
+        console.log(data.error);
         // Show error below the email field (e.g., "Email already exists")
         // setServerError(data.error);
       } else {
