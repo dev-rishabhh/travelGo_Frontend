@@ -102,7 +102,7 @@ export default function BookingPage() {
       }
 
       const data = await response.json();
-      
+
       if (data.error) {
         console.log(data.error);
         // Show error below the email field (e.g., "Email already exists")

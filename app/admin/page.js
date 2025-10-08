@@ -26,12 +26,12 @@ const AdminPage = () => {
       icon: Calendar,
       color: 'bg-green-500'
     },
-    {
-      name: 'Total Revenue',
-      value: `INR ${bookings.reduce((sum, b) => sum + b.amount, 0).toFixed(2)}`,
-      icon: User,
-      color: 'bg-purple-500'
-    }
+    // {
+    //   name: 'Total Revenue',
+    //   value: `INR ${bookings.reduce((sum, b) => sum + b.amount, 0).toFixed(2)}`,
+    //   icon: User,
+    //   color: 'bg-purple-500'
+    // }
   ];
 
   async function fetchUser() {
@@ -117,7 +117,7 @@ const AdminPage = () => {
                       Status
                     </th>
                     <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wide">
-                      Amount
+                      Phone
                     </th>
                   </tr>
                 </thead>
@@ -147,7 +147,7 @@ const AdminPage = () => {
                         </span>
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                        INR {booking.amount}
+                        INR {booking.phone}
                       </td>
                     </tr>
                   ))}
