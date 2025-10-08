@@ -104,7 +104,7 @@ export default function BookingPage() {
         return router.push("/login")
       }
       if (data.error) {
-        console.log(data.error);
+        console.log(data);
         // Show error below the email field (e.g., "Email already exists")
         // setServerError(data.error);
       } else {
