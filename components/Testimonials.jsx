@@ -4,51 +4,37 @@ import TestimonialCard from "./TestimonialCard";
 
 
 const testimonials = [
-  {
-    id: 1,
-    name: "Sarah Johnson",
-    role: "Product Manager",
-    company: "TechCorp Inc.",
-    content: "This platform has revolutionized how we handle our daily operations. The intuitive design and powerful features have increased our team's productivity by 40%. I can't imagine working without it now.",
-    rating: 5,
-    avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face"
-  },
-  {
-    id: 2,
-    name: "Michael Chen",
-    role: "Software Engineer",
-    company: "InnovateLab",
-    content: "The attention to detail and user experience is phenomenal. Every feature feels thoughtfully designed and the performance is outstanding. It's rare to find software that exceeds expectations.",
-    rating: 5,
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
-  },
-  {
-    id: 3,
-    name: "Emily Rodriguez",
-    role: "Marketing Director",
-    company: "BrandBoost",
-    content: "We've tried many solutions, but nothing comes close to this level of quality and reliability. The customer support is exceptional and the results speak for themselves.",
-    rating: 5,
-    avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face"
-  },
-  {
-    id: 4,
-    name: "David Kim",
-    role: "CEO",
-    company: "StartupXY",
-    content: "As a startup founder, I need tools that scale with my business. This solution has grown with us from day one and continues to impress with new features and improvements.",
-    rating: 5,
-    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face"
-  },
-  {
-    id: 5,
-    name: "Lisa Thompson",
-    role: "Operations Manager",
-    company: "Global Solutions",
-    content: "The automation features have saved us countless hours every week. What used to take our team days now happens automatically with perfect accuracy. It's been a game-changer.",
-    rating: 5,
-    avatar: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=150&h=150&fit=crop&crop=face"
-  }
+{
+  id: 2,
+  name: "Ramesh Verma",
+  role: "Bank Manager",
+  content: "The local tour to Jaipur was incredibly well-organized. The guide was knowledgeable and everything ran on time. Highly trustworthy service!"
+},
+{
+  id: 3,
+  name: "Sunita Desai",
+  role: "Homemaker",
+  content: "I felt completely safe and cared for during our Varanasi temple tour. It’s rare to find such personal attention and local insight these days."
+},
+{
+  id: 4,
+  name: "Aarav Mehta",
+  role: "Software Engineer",
+  content: "Booked a weekend getaway to Rishikesh through this platform. Clean accommodations, transparent pricing, and no hidden surprises. Great job!"
+},
+{
+  id: 5,
+  name: "Neha Kulkarni",
+  role: "College Professor",
+  content: "I loved how culturally immersive our Nepal backwaters tour was. The local hosts were warm, and everything felt authentic—not touristy."
+},
+{
+  id: 6,
+  name: "Vikram Chauhan",
+  role: "Photographer",
+  content: "As someone who travels often, I was impressed by how smooth and reliable the booking experience was. The local food walk in Ayodhya was a highlight!"
+}
+
 ];
 
 const TestimonialCarousel = () => {

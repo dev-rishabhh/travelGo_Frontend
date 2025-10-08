@@ -60,7 +60,7 @@ const About = () => {
           <div className="max-w-4xl mx-auto animate-fade-in">
             <h2 className="text-4xl font-bold text-gray-900 mb-8">Our Mission</h2>
             <p className="text-2xl text-gray-700 leading-relaxed mb-8">
-              "Our mission is to showcase the spiritual eesence of Ayodhya, Varanasi and other places by offering authentic, well-planned toursthat connect travelers with
+              "Our mission is to showcase the spiritual essence of Ayodhya, Varanasi and other places by offering authentic, well-planned toursthat connect travelers with
               rich culture, heritage, and traditions of these sacred cities.We aim to provide seamless travle experience with personalized packages, trusted local giudes,and 24/7 Support
               ensuring every journey comfertable and unforgettable."
             </p>
@@ -181,7 +181,7 @@ const About = () => {
                   <div className="inset-0 rounded-full  transition-all duration-300"></div>
                 </div>
                 <div className="flex-1 px-3 my-2 md:my-0">
-                  <h3 className="text-2xl font-bold text-gray-900 text-center">Mohit Tiwari</h3>
+                  <h3 className="text-2xl font-bold text-gray-900 text-center">Harshit Tiwari</h3>
                   <p className="text-blue-600 font-medium mb-3 text-center">Founder & CEO</p>
                   <p className="text-gray-600 mb-3"> "Harshit Tiwari , is an MBA in Hospitality and Tourism with over 10 years of experience
                     of hands-on-experience in Ayodhya tourism. With a deep passion for showcasing India's culture and spiritual heritage,especially Ayodhya and Varanasi, he has 

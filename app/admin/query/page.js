@@ -24,7 +24,7 @@ const QueryPage = () => {
                 return router.push("/")
             }
         } catch (err) {
-            console.error("Error fetching user info:", err);
+            console.error("Error fetching  queries:", err);
         }
     }
 
@@ -39,15 +39,14 @@ const QueryPage = () => {
                 credentials: "include",
             });
             if (response.ok) {
-                const data = await response.json();
-                setquery(data)
+                return router.push("/admin/query")
             }
             else {
                 return router.push("/")
             }
             fetchQuery();
         } catch (err) {
-            console.error("Error fetching user info:", err);
+            console.error("Error deleting query :", err);
         }
     }
 

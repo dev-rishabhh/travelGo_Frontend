@@ -604,9 +604,9 @@ export default function BookingPage() {
                       />
                       <label htmlFor="terms" className="text-sm text-muted-foreground">
                         I agree to the
-                        <Link href="terms-and-conditions " className="text-primary underline px-2">Terms and Conditions</Link>
+                        <p  className="text-primary underline px-2">Terms and Conditions</p>
                         and
-                        <Link href="privacy-policy" className="text-primary underline px-2 ">Privacy Policy</Link>.
+                        <p className="text-primary underline px-2 ">Privacy Policy</p>.
                         I understand that my booking is subject to the property's cancellation policy.
                       </label>
                     </div>
@@ -649,7 +649,7 @@ export default function BookingPage() {
                     Your reservation has been successfully confirmed.
                   </p>
                   <p className="font-medium mb-8">
-                    Booking Reference: <span className="text-primary">MRS-{Math.floor(Math.random() * 10000).toString().padStart(4, '0')}</span>
+                    <span>Our Team will be contacting you soon ... </span>
                   </p>
                   <Button varient="primary">
                     <Link href="/">Return to Homepage</Link>
