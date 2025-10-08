@@ -4,15 +4,17 @@ import { Check, ChevronRight, Calendar, IndianRupee, MapPin } from "lucide-react
 import { Button } from "../../components/ui/button";
 import AvailabilityForm from "@/components/AvailibilityForm";
 import ProgressBar from "@/components/ProgressBar";
+import { useRouter } from "next/navigation";
 import { BASE_URL } from "@/apis/api";
 import Link from "next/link";
-// import { useRouter } from "next/navigation";
-//  const router = useRouter()
 
 // import { loadStripe } from '@stripe/stripe-js';
 
 
 export default function BookingPage() {
+
+   const router = useRouter()
+
   const [Tours, setTours] = useState(null)
   const [startDate, setStartDate] = useState(new Date().toISOString().split('T')[0]);
   const [endDate, setEndDate] = useState(new Date().toISOString().split('T')[0]);
@@ -98,9 +100,11 @@ export default function BookingPage() {
 
       const data = await response.json();
 
+      if (data.status===401) {
+        return router.push("/")
+      }
       if (data.error) {
         console.log(data.error);
-
         // Show error below the email field (e.g., "Email already exists")
         // setServerError(data.error);
       } else {

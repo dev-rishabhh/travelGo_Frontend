@@ -10,7 +10,6 @@ function page() {
   const router = useRouter()
 
   setTimeout(() => {
-
     router.push("/")
   }, 10000);
 
