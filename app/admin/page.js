@@ -147,7 +147,7 @@ const AdminPage = () => {
                         </span>
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                        INR {booking.phone}
+                         {booking.phone}
                       </td>
                     </tr>
                   ))}
