@@ -8,53 +8,54 @@ import { BASE_URL } from '@/apis/api';
 import { Button } from '@/components/ui/button';
 
 const BookingsList = () => {
-    const router = useRouter()
-    const [bookings, setbookings] = useState([])
-    const [message, setmessage] = useState("")
+  const router = useRouter()
 
-    const fetchData = async () => {
-        try {
-            const response = await fetch(`${BASE_URL}/bookings`, {
-                credentials: "include"
-            });
-            // console.log(response);
+  const [bookings, setbookings] = useState([])
+  const [message, setmessage] = useState("")
 
-            if (response.status === 401) {
-                router.push("/login");
-            }
-            else if (response.status === 404) {
-                setmessage("No bookings found")
-            }
-            else {
-                setmessage("")
-                const data = await response.json();
-                setbookings(data)
-            }
-        } catch (error) {
-            console.error("Error:", error);
-        }
-    };
-    useEffect(() => {
-        fetchData()
-    }, [])
+  const fetchData = async () => {
+    try {
+      const response = await fetch(`${BASE_URL}/bookings`, {
+        credentials: "include"
+      });
+      // console.log(response);
 
-      return (
+      if (response.status === 401) {
+        router.push("/login");
+      }
+      else if (response.status === 404) {
+        setmessage("No bookings found")
+      }
+      else {
+        setmessage("")
+        const data = await response.json();
+        setbookings(data)
+      }
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  };
+  useEffect(() => {
+    fetchData()
+  }, [])
+
+  return (
     <div className="py-16 ">
       <main className="flex-grow">
         {/* Header */}
-      <section className="relative bg-blue-300 text-white py-24">
-        <div className="absolute inset-0 bg-black/20"></div>
-        <div className="relative max-w-7xl mx-auto px-6 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-fade-in">
-            Your Bookings
-            {/* <span className="block text-blue-200">Wanderlust & Wonder</span> */}
-          </h1>
-          <p className="text-xl text-red-50 max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            For over two decades, we've been crafting extraordinary journeys that inspire,
-            educate, and create lasting memories for travelers from around the globe.
-          </p>
-        </div>
-      </section>
+        <section className="relative bg-blue-300 text-white py-24">
+          <div className="absolute inset-0 bg-black/20"></div>
+          <div className="relative max-w-7xl mx-auto px-6 text-center">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-fade-in">
+              Your Bookings
+              {/* <span className="block text-blue-200">Wanderlust & Wonder</span> */}
+            </h1>
+            <p className="text-xl text-red-50 max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: '0.2s' }}>
+              For over two decades, we've been crafting extraordinary journeys that inspire,
+              educate, and create lasting memories for travelers from around the globe.
+            </p>
+          </div>
+        </section>
 
         {/* Bookings Grid */}
         {bookings?.length === 0 ? (
@@ -67,7 +68,7 @@ const BookingsList = () => {
             </Link>
           </div>
         ) : (
-          <div className="grid gap-8  md:grid-cols-2 xl:grid-cols-3 p-4">
+          <div className="p-4">
             {bookings?.map((booking, index) => (
               <div
                 key={booking._id}
@@ -77,11 +78,11 @@ const BookingsList = () => {
                 <div className="p-6">
                   <div className="flex justify-between items-start">
                     <div className="flex-1">
-                      <div className="text-2xl mb-2 font-bold ">
+                      <div className="text-center text-2xl mb-2 font-bold ">
                         {booking.tourId.name}
                       </div>
                       <span className={`bg-green-100 text-green-800 border-green-200 text-sm font-medium px-2 py-1 rounded-sm`}>
-                       Confirmed
+                        Confirmed
                       </span>
                     </div>
                     {/* <div className="text-right">
@@ -158,15 +159,15 @@ const BookingsList = () => {
 
                   {/* Special Requests */}
                   {/* {booking.specialRequests && ( */}
-                    <div className="bg-blue-50 rounded-lg p-4">
-                      <div className="flex items-center gap-2 mb-2">
-                        <MessageSquare className="text-blue-600" size={18} />
-                        <span className="font-medium text-gray-700">Special Requests</span>
-                      </div>
-                      <p className="text-gray-900 text-sm leading-relaxed">
-                        {booking.specialRequests}
-                      </p>
+                  <div className="bg-blue-50 rounded-lg p-4">
+                    <div className="flex items-center gap-2 mb-2">
+                      <MessageSquare className="text-blue-600" size={18} />
+                      <span className="font-medium text-gray-700">Special Requests</span>
                     </div>
+                    <p className="text-gray-900 text-sm leading-relaxed">
+                      {booking.specialRequests}
+                    </p>
+                  </div>
                   {/* )} */}
 
                   {/* Action Buttons */}
@@ -174,6 +175,9 @@ const BookingsList = () => {
                     <Button
                       variant='destructive'
                       size="sm"
+                      onClick={() =>
+                        router.push("/contact")
+                      }
                     >
                       Request  Cancel
                     </Button>
