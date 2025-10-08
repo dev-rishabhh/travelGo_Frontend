@@ -73,7 +73,7 @@ const TestimonialCarousel = () => {
       {/* Header */}
       <div className="text-center">
         <h2 className="text-4xl md:text-5xl font-bold  bg-clip-text text-blue-600 mb-4">
-          What Our Users Say
+          What Our Clients Say
         </h2>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto">
           Don't just take our word for it. Here's what real users have to say about their experience.
@@ -99,10 +99,7 @@ const TestimonialCarousel = () => {
               <TestimonialCard
                 name={testimonial.name}
                 role={testimonial.role}
-                company={testimonial.company}
                 content={testimonial.content}
-                rating={testimonial.rating}
-                avatar={testimonial.avatar}
                 isActive={testimonial.isActive}
               />
             </div>

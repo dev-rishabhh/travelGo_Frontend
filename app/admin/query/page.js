@@ -39,7 +39,7 @@ const QueryPage = () => {
                 credentials: "include",
             });
             if (response.ok) {
-                return router.push("/admin/query")
+                return router.push("/admin")
             }
             else {
                 return router.push("/")
