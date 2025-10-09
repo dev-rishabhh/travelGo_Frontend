@@ -3,10 +3,7 @@ import { Quote, } from "lucide-react";
 const TestimonialCard = ({ 
   name, 
   role, 
-  company, 
   content, 
-  rating, 
-  avatar, 
   isActive = false 
 }) => {
   return (

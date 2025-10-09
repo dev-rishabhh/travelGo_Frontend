@@ -121,7 +121,8 @@ const Navbar = () => {
             <div className="flex items-center">
               <div className="flex-shrink-0 flex items-center">
                 <div className="h-8 w-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-sm">{desktop ? "AP" :"HB"}</span>
+                  {/* <span className="text-white font-bold text-sm">{desktop ? "AP" :"HB"}</span> */}
+                  <img src='./logo.jpg'alt='Logo'/>
                 </div>
                 <span className="ml-3 text-xl font-semibold text-gray-900">{desktop ? "Admin Panel":"Holiday Vibes"}</span>
               </div>
