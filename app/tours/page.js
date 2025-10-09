@@ -4,14 +4,8 @@ import TourCard from "../../components/Tourcard";
 import './style.css'
 import { BASE_URL } from "@/apis/api";
 import { Button } from "@/components/ui/button";
-export const metadata = {
-  title:
-  {
-    template: "Tpur Packlages |Explore Temples, Culture & Heritage| Holiday Vibes",
-  },
-  description: "Discover  Ayodhya, Varanasi, Lucknow, Delhi, Jaipur with our tour pacakges. Plan perfect journey across spiritual ceneters of India",
-  keywords:"same day ayodhya tour, jaipur tour pacakges, varanasi tour packages, ayodhya tour packages,ayodhya tour package,best time visit ayodhya,ayodhya package"
-};
+import Head from "next/head";
+
 
 export default function Tours() {
   const [Tours, setTours] = useState()
@@ -54,6 +48,20 @@ export default function Tours() {
 
 
   return (
+    <>
+     <Head>
+      <title>
+        Tour Packlages |Explore Temples, Culture & Heritage| Holiday Vibes
+      </title>
+      <meta
+      name="description"
+      content="Discover  Ayodhya, Varanasi, Lucknow, Delhi, Jaipur with our tour pacakges. Plan perfect journey across spiritual ceneters of India"
+      />
+      <meta
+      name="keywords"
+      content="same day ayodhya tour, jaipur tour pacakges, varanasi tour packages, ayodhya tour packages,ayodhya tour package,best time visit ayodhya,ayodhya package"
+      />
+    </Head>
     <div className="py-16">
       <main className="flex-grow">
         {/* Header Section */}
@@ -153,5 +161,6 @@ export default function Tours() {
         </section>
       </main>
     </div>
+    </>
   );
 }
