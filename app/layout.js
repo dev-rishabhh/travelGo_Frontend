@@ -4,13 +4,9 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 
 export const metadata = {
-  title:
-  {
-    template: "%s |Explore Temples, Culture & Heritage| Holiday Vibes",
-    default: "Explore Temples, Culture & Heritage| Holiday Vibes"
-  },
-  description: "Explore Ayodhya, Varanasi, Lucknow, Jaipur and Delhi with our customized spiritual tour packages",
-  keywords:"Ayodhya tours, Ayodhya Varanasi tour, Ram Mandir, Delhi Jaipur tour, Lucknow Ayodhya Tour"
+  title:"Tour Packages |Explore Temples, Culture & Heritage| Holiday Vibes",
+  description: "Discover  Ayodhya, Varanasi, Lucknow, Delhi, Jaipur with us. Plan perfect journey across spiritual centers of India",
+  keywords:"same day ayodhya tour, jaipur tour pacakges, varanasi tour packages, ayodhya tour packages,ayodhya tour package,best time visit ayodhya,ayodhya package"
 };
 
 export default function RootLayout({ children }) {
