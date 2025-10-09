@@ -4,6 +4,14 @@ import TourCard from "../../components/Tourcard";
 import './style.css'
 import { BASE_URL } from "@/apis/api";
 import { Button } from "@/components/ui/button";
+export const metadata = {
+  title:
+  {
+    template: "Tpur Packlages |Explore Temples, Culture & Heritage| Holiday Vibes",
+  },
+  description: "Discover  Ayodhya, Varanasi, Lucknow, Delhi, Jaipur with our tour pacakges. Plan perfect journey across spiritual ceneters of India",
+  keywords:"same day ayodhya tour, jaipur tour pacakges, varanasi tour packages, ayodhya tour packages,ayodhya tour package,best time visit ayodhya,ayodhya package"
+};
 
 export default function Tours() {
   const [Tours, setTours] = useState()

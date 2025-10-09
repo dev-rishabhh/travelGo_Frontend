@@ -8,7 +8,7 @@ const AboutUs = () => {
            <h4 className="text-center text-blue-500 p-2">OUR ACCOMMODATIONS</h4>
           <h2>About Holiday Vibe </h2>
           <p>
-            At Holiday Vibe, we specialize in crafting personalized travel experiences that turn your dreams into unforgettable journeys. Whether it's a spiritual tour, an adventure-packed getaway, or a cultural exploration, we ensure every trip is seamless and memorable.
+            At Holiday Vibes, we specialize in crafting personalized travel experiences that turn your dreams into unforgettable journeys. Whether it's a spiritual tour, an adventure-packed getaway, or a cultural exploration, we ensure every trip is seamless and memorable.
           </p>
           <p>
             Our mission is to provide top-notch service, affordable packages, and 24/7 support to travelers across the globe. Trusted by thousands, we bring your travel dreams to life — one destination at a time.

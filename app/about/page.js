@@ -3,6 +3,15 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Award, Heart, Globe, Users, TrendingUp, Clock, MapPin, Shield, Star, Quote, Mail } from "lucide-react";
 import Link from "next/link";
 
+export const metadata = {
+  title:
+  {
+    template: "About Us |Explore Temples, Culture & Heritage| Holiday Vibes",
+  },
+  description: "Learn about our mission to promote Ayodhya,Varanasi, Lucknow, Delhi, Jaipur tours packages",
+  keywords:"Ram Mandir tour, About Ayodhya Dham, Tour & Travel packages in Ayodhya, Local tour in Ayodhya, "
+};
+
 
 const About = () => {
   const stats = [

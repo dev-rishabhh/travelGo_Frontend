@@ -5,6 +5,15 @@ import './Contact.css'
 import { Button } from "@/components/ui/button";
 import { BASE_URL } from "@/apis/api";
 
+export const metadata = {
+  title:
+  {
+    template: "Contact Us |Explore Temples, Culture & Heritage| Holiday Vibes",
+  },
+  description: "get in touch with local tour providers in Ayodhya, Varanasi, Lucknow, Delhi, Jaipur for tour bookings",
+  keywords:"Contact Ayodhya tour, ayodhya tour packages, ayodhya tour itinerary, ram mandir timing, tour travel packages in ayodhya"
+};
+
 
 export default function Contact() {
   const [formData, setFormData] = useState({
